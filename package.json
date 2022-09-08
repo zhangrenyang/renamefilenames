@@ -1,0 +1,21 @@
+{
+  "name": "renamefilenames",
+  "version": "1.0.2",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "renamefilenames": "./index.js"
+  },
+  "keywords": [
+    "rename-filenames",
+    "rename",
+    "filenames",
+    "move"
+  ],
+  "author": "zhangrenyang",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "glob": "^8.0.3"
+  }
+}
