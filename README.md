@@ -1,5 +1,6 @@
 ## description
-- rename filesnames in current directory
+
+- rename files names in current directory
 
 ## install
 
@@ -7,19 +8,34 @@
 npm install renamefilenames -g
 ```
 
-## usage
+## two usages
+
+- change `some-before.txt` to `some-after.txt`
+
+### Passing parameters through the command line
+
+```js
+renamefilenames  "before" "after"
+```
+
+- change `some-before.txt` to `some-.txt`
+
+```js
+renamefilenames  "before"
+```
+
+### Passing parameters through configuration files
 
 1. Add a replace.json file in current directory
 
 ```json
 {
- "before": "after"
+  "before": "after"
 }
 ```
 
 2.Then execute command in current directory
-```js
-renamefilenames
-```
 
-3. `some-before.txt` will change to `some-after.txt`
+```js
+renamefilenames;
+```
